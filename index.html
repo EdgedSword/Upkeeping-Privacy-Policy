@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Upkeeping — Privacy Policy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --primary:   #1B5E83;
+      --accent:    #2A9D8F;
+      --bg:        #F5F7FA;
+      --surface:   #FFFFFF;
+      --text:      #1A1A2E;
+      --subtle:    #5A6A7A;
+      --rule:      #DDE3EA;
+      --danger:    #E63946;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── Header ── */
+    header {
+      background: var(--primary);
+      padding: 56px 24px 48px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 60% 80% at 20% 50%, rgba(42,157,143,.25) 0%, transparent 60%),
+        radial-gradient(ellipse 50% 70% at 80% 30%, rgba(77,166,212,.18) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    .header-inner { position: relative; z-index: 1; }
+
+    .app-icon {
+      width: 72px;
+      height: 72px;
+      background: linear-gradient(145deg, var(--accent), #1a7a6e);
+      border-radius: 18px;
+      margin: 0 auto 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 24px rgba(0,0,0,.25);
+    }
+
+    .app-icon svg {
+      width: 36px;
+      height: 36px;
+      fill: none;
+      stroke: #fff;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    header h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2rem, 5vw, 3rem);
+      color: #fff;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+    }
+
+    header h1 em {
+      font-style: italic;
+      color: rgba(255,255,255,.65);
+    }
+
+    header p {
+      margin-top: 12px;
+      color: rgba(255,255,255,.65);
+      font-size: 0.95rem;
+      font-weight: 400;
+      letter-spacing: 0.01em;
+    }
+
+    /* ── Layout ── */
+    main {
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 0 24px 80px;
+    }
+
+    /* ── Summary card ── */
+    .summary {
+      background: var(--surface);
+      border-radius: 16px;
+      padding: 32px;
+      margin: 40px 0;
+      border: 1px solid var(--rule);
+      box-shadow: 0 2px 12px rgba(27,94,131,.06);
+    }
+
+    .summary-title {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.2rem;
+      color: var(--primary);
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .summary-title::before {
+      content: '';
+      width: 4px;
+      height: 1.2em;
+      background: var(--accent);
+      border-radius: 2px;
+      flex-shrink: 0;
+    }
+
+    .pill-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .pill {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      background: #EFF3F7;
+      border-radius: 100px;
+      padding: 7px 14px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--text);
+    }
+
+    .pill .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .dot-green  { background: #2DC653; }
+    .dot-blue   { background: var(--accent); }
+    .dot-yellow { background: #F4A261; }
+
+    /* ── Section ── */
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section-label {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+
+    .section-num {
+      width: 28px;
+      height: 28px;
+      border-radius: 8px;
+      background: var(--primary);
+      color: #fff;
+      font-size: 0.75rem;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.35rem;
+      color: var(--text);
+      line-height: 1.2;
+    }
+
+    p, li {
+      font-size: 0.97rem;
+      color: var(--subtle);
+      line-height: 1.8;
+    }
+
+    p + p { margin-top: 14px; }
+
+    ul {
+      list-style: none;
+      margin-top: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    li {
+      padding-left: 20px;
+      position: relative;
+    }
+
+    li::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    .divider {
+      height: 1px;
+      background: var(--rule);
+      margin: 40px 0;
+    }
+
+    /* ── Highlight box ── */
+    .highlight {
+      background: #EFF3F7;
+      border-left: 3px solid var(--accent);
+      border-radius: 0 10px 10px 0;
+      padding: 16px 20px;
+      margin-top: 16px;
+    }
+
+    .highlight p {
+      font-size: 0.92rem;
+      color: var(--text);
+    }
+
+    /* ── Contact ── */
+    .contact-card {
+      background: linear-gradient(135deg, var(--primary) 0%, #164d6b 100%);
+      border-radius: 16px;
+      padding: 36px 32px;
+      text-align: center;
+      margin-top: 48px;
+    }
+
+    .contact-card h3 {
+      font-family: 'DM Serif Display', serif;
+      color: #fff;
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+    }
+
+    .contact-card p {
+      color: rgba(255,255,255,.65);
+      font-size: 0.93rem;
+      margin-bottom: 22px;
+    }
+
+    .contact-card a {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      padding: 13px 28px;
+      border-radius: 100px;
+      font-size: 0.92rem;
+      font-weight: 500;
+      letter-spacing: 0.01em;
+      transition: opacity .2s, transform .2s;
+    }
+
+    .contact-card a:hover {
+      opacity: .85;
+      transform: translateY(-1px);
+    }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      border-top: 1px solid var(--rule);
+      font-size: 0.82rem;
+      color: #A0AEBF;
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    /* ── Animations ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .header-inner  { animation: fadeUp .6s ease both; }
+    .summary       { animation: fadeUp .6s .1s ease both; }
+    .section       { animation: fadeUp .5s ease both; }
+
+    /* ── Responsive ── */
+    @media (max-width: 480px) {
+      header { padding: 40px 20px 36px; }
+      .summary, .contact-card { padding: 24px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="app-icon">
+      <!-- House + checkmark icon -->
+      <svg viewBox="0 0 24 24">
+        <path d="M3 9.5L12 3l9 6.5V21H3V9.5z"/>
+        <polyline points="8,13 10.5,16 16,11"/>
+      </svg>
+    </div>
+    <h1>Upkeeping <em>Privacy Policy</em></h1>
+    <p>Effective date: February 21, 2026 &nbsp;·&nbsp; Apps by Murphy</p>
+  </div>
+</header>
+
+<main>
+
+  <!-- Plain-language summary -->
+  <div class="summary">
+    <div class="summary-title">The short version</div>
+    <div class="pill-grid">
+      <div class="pill"><span class="dot dot-green"></span>No data collected</div>
+      <div class="pill"><span class="dot dot-green"></span>No account required</div>
+      <div class="pill"><span class="dot dot-green"></span>No ads, ever</div>
+      <div class="pill"><span class="dot dot-blue"></span>Everything stays on your device</div>
+      <div class="pill"><span class="dot dot-blue"></span>No third-party tracking</div>
+      <div class="pill"><span class="dot dot-yellow"></span>Apple handles all payments</div>
+    </div>
+  </div>
+
+  <!-- 1 -->
+  <div class="section">
+    <div class="section-label">
+      <div class="section-num">1</div>
+      <h2>Who We Are</h2>
+    </div>
+    <p>Upkeeping is an iOS home maintenance reminder app developed by Apps by Murphy. If you have questions about this policy, contact us at <a href="mailto:AppsByMurphy@Gmail.com" style="color:var(--accent);text-decoration:none;font-weight:500;">AppsByMurphy@Gmail.com</a>.</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- 2 -->
+  <div class="section">
+    <div class="section-label">
+      <div class="section-num">2</div>
+      <h2>Information We Do Not Collect</h2>
+    </div>
+    <p>Upkeeping is designed to work entirely on your device. We do not collect, transmit, store, or share any personal information. Specifically, we do not collect:</p>
+    <ul>
+      <li>Your name, email address, or contact information</li>
+      <li>Your location data</li>
+      <li>Device identifiers or advertising identifiers</li>
+      <li>Usage data, analytics, or crash reports</li>
+      <li>The content of your tasks, notes, or home information</li>
+      <li>Any data about the notifications you receive</li>
+    </ul>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- 3 -->
+  <div class="section">
+    <div class="section-label">
+      <div class="section-num">3</div>
+      <h2>Data Stored on Your Device</h2>
+    </div>
+    <p>All information you enter into Upkeeping — your tasks, due dates, completion history, and preferences — is stored locally on your iPhone using Apple's SwiftData framework. This data never leaves your device and is not accessible to us.</p>
+    <div class="highlight">
+      <p>Your data is yours. If you delete the app, all data stored by Upkeeping is removed from your device. We have no copy of it and cannot recover it.</p>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- 4 -->
+  <div class="section">
+    <div class="section-label">
+      <div class="section-num">4</div>
+      <h2>Notifications</h2>
+    </div>
+    <p>Upkeeping uses local notifications to remind you about upcoming maintenance tasks. These notifications are generated and delivered entirely on your device — they do not pass through any server operated by us or any third party.</p>
+    <p>You can manage or disable notifications at any time in the iOS Settings app under Upkeeping → Notifications.</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- 5 -->
+  <div class="section">
+    <div class="section-label">
+      <div class="section-num">5</div>
+      <h2>In-App Purchases</h2>
+    </div>
+    <p>Upkeeping offers an optional subscription (Upkeeping Pro) to unlock unlimited tasks. All purchases are processed securely by Apple through the App Store using StoreKit 2. We do not receive, store, or have access to your payment information, credit card details, or Apple ID.</p>
+    <p>Apple's handling of payment data is governed by Apple's own <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">Privacy Policy</a>. To manage or cancel your subscription, go to <strong style="color:var(--text);">Settings → [Your Name] → Subscriptions</strong> on your iPhone.</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- 6 -->
+  <div class="section">
+    <div class="section-label">
+      <div class="section-num">6</div>
+      <h2>Third-Party Services</h2>
+    </div>
+    <p>Upkeeping does not integrate any third-party SDKs, analytics services, advertising networks, crash reporting tools, or social media platforms. The only third party involved is Apple, through the App Store distribution and StoreKit payment processing described above.</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- 7 -->
+  <div class="section">
+    <div class="section-label">
+      <div class="section-num">7</div>
+      <h2>Children's Privacy</h2>
+    </div>
+    <p>Upkeeping is rated 4+ on the App Store and does not contain content inappropriate for any age group. Because we collect no personal data from any user, we have no concerns specific to users under 13. We do not knowingly collect information from children.</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- 8 -->
+  <div class="section">
+    <div class="section-label">
+      <div class="section-num">8</div>
+      <h2>iCloud & Backups</h2>
+    </div>
+    <p>If you have iCloud Backup enabled on your iPhone, your device data — including data stored by Upkeeping — may be backed up to your personal iCloud account. This backup is controlled entirely by you and Apple, not by Apps by Murphy. We have no access to your iCloud data.</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- 9 -->
+  <div class="section">
+    <div class="section-label">
+      <div class="section-num">9</div>
+      <h2>Changes to This Policy</h2>
+    </div>
+    <p>If we update this privacy policy, we will revise the effective date at the top of this page and post the updated version here. Material changes that affect your rights will be communicated through an app update release note. Your continued use of Upkeeping after a policy change constitutes your acceptance of the revised policy.</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- 10 -->
+  <div class="section">
+    <div class="section-label">
+      <div class="section-num">10</div>
+      <h2>Your Rights</h2>
+    </div>
+    <p>Because Upkeeping collects no personal data, there is nothing for us to access, export, correct, or delete on your behalf. All of your data is on your device, under your full control. You can delete all app data at any time by uninstalling Upkeeping from your iPhone.</p>
+    <p>If you have any questions about your privacy or believe something in this policy is inaccurate, please contact us.</p>
+  </div>
+
+  <!-- Contact -->
+  <div class="contact-card">
+    <h3>Questions or concerns?</h3>
+    <p>We're happy to help. Reach out anytime.</p>
+    <a href="mailto:AppsByMurphy@Gmail.com">AppsByMurphy@Gmail.com</a>
+  </div>
+
+</main>
+
+<footer>
+  <p>© 2026 Apps by Murphy &nbsp;·&nbsp; Upkeeping for iOS</p>
+  <p style="margin-top:6px;"><a href="mailto:AppsByMurphy@Gmail.com">AppsByMurphy@Gmail.com</a></p>
+</footer>
+
+</body>
+</html>
