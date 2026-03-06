@@ -319,14 +319,13 @@
 <header>
   <div class="header-inner">
     <div class="app-icon">
-      <!-- House + checkmark icon -->
       <svg viewBox="0 0 24 24">
         <path d="M3 9.5L12 3l9 6.5V21H3V9.5z"/>
         <polyline points="8,13 10.5,16 16,11"/>
       </svg>
     </div>
     <h1>Upkeeping <em>Privacy Policy</em></h1>
-    <p>Effective date: February 21, 2026 &nbsp;·&nbsp; Apps by Murphy</p>
+    <p>Effective date: March 5, 2026 &nbsp;·&nbsp; Apps by Murphy</p>
   </div>
 </header>
 
@@ -336,10 +335,10 @@
   <div class="summary">
     <div class="summary-title">The short version</div>
     <div class="pill-grid">
-      <div class="pill"><span class="dot dot-green"></span>No data collected</div>
+      <div class="pill"><span class="dot dot-green"></span>No data collected by us</div>
       <div class="pill"><span class="dot dot-green"></span>No account required</div>
       <div class="pill"><span class="dot dot-green"></span>No ads, ever</div>
-      <div class="pill"><span class="dot dot-blue"></span>Everything stays on your device</div>
+      <div class="pill"><span class="dot dot-blue"></span>Your data is private in iCloud</div>
       <div class="pill"><span class="dot dot-blue"></span>No third-party tracking</div>
       <div class="pill"><span class="dot dot-yellow"></span>Apple handles all payments</div>
     </div>
@@ -362,7 +361,7 @@
       <div class="section-num">2</div>
       <h2>Information We Do Not Collect</h2>
     </div>
-    <p>Upkeeping is designed to work entirely on your device. We do not collect, transmit, store, or share any personal information. Specifically, we do not collect:</p>
+    <p>Apps by Murphy does not collect, transmit, store, or share any personal information. Specifically, we do not collect:</p>
     <ul>
       <li>Your name, email address, or contact information</li>
       <li>Your location data</li>
@@ -379,11 +378,11 @@
   <div class="section">
     <div class="section-label">
       <div class="section-num">3</div>
-      <h2>Data Stored on Your Device</h2>
+      <h2>Data Storage</h2>
     </div>
-    <p>All information you enter into Upkeeping — your tasks, due dates, completion history, and preferences — is stored locally on your iPhone using Apple's SwiftData framework. This data never leaves your device and is not accessible to us.</p>
+    <p>All information you enter into Upkeeping — your tasks, due dates, completion history, and preferences — is stored on your iPhone using Apple's SwiftData framework. If you are signed into iCloud, this data is also synced to your private iCloud account via Apple's CloudKit service so it is available across your devices. This sync is between you and Apple — Apps by Murphy has no access to your iCloud data at any time.</p>
     <div class="highlight">
-      <p>Your data is yours. If you delete the app, all data stored by Upkeeping is removed from your device. We have no copy of it and cannot recover it.</p>
+      <p>Your data is yours. If you delete the app, all data stored locally by Upkeeping is removed from your device. Any data in your iCloud account can be deleted by signing into icloud.com or through iOS Settings. We have no copy of your data and cannot recover it.</p>
     </div>
   </div>
 
@@ -395,7 +394,7 @@
       <div class="section-num">4</div>
       <h2>Notifications</h2>
     </div>
-    <p>Upkeeping uses local notifications to remind you about upcoming maintenance tasks. These notifications are generated and delivered entirely on your device — they do not pass through any server operated by us or any third party.</p>
+    <p>Upkeeping uses local notifications to remind you about upcoming maintenance tasks. These notifications are generated and delivered entirely on your device — they do not pass through any server operated by Apps by Murphy.</p>
     <p>You can manage or disable notifications at any time in the iOS Settings app under Upkeeping → Notifications.</p>
   </div>
 
@@ -407,7 +406,7 @@
       <div class="section-num">5</div>
       <h2>In-App Purchases</h2>
     </div>
-    <p>Upkeeping offers an optional subscription (Upkeeping Pro) to unlock unlimited tasks. All purchases are processed securely by Apple through the App Store using StoreKit 2. We do not receive, store, or have access to your payment information, credit card details, or Apple ID.</p>
+    <p>Upkeeping offers an optional subscription (Upkeeping Pro) to unlock unlimited tasks and additional features. All purchases are processed securely by Apple through the App Store using StoreKit 2. We do not receive, store, or have access to your payment information, credit card details, or Apple ID.</p>
     <p>Apple's handling of payment data is governed by Apple's own <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">Privacy Policy</a>. To manage or cancel your subscription, go to <strong style="color:var(--text);">Settings → [Your Name] → Subscriptions</strong> on your iPhone.</p>
   </div>
 
@@ -419,7 +418,7 @@
       <div class="section-num">6</div>
       <h2>Third-Party Services</h2>
     </div>
-    <p>Upkeeping does not integrate any third-party SDKs, analytics services, advertising networks, crash reporting tools, or social media platforms. The only third party involved is Apple, through the App Store distribution and StoreKit payment processing described above.</p>
+    <p>Upkeeping does not integrate any third-party SDKs, analytics services, advertising networks, crash reporting tools, or social media platforms. The only services used are Apple's own: the App Store for distribution, StoreKit for payment processing, and CloudKit for optional iCloud sync. Each of these is governed by <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">Apple's Privacy Policy</a>.</p>
   </div>
 
   <div class="divider"></div>
@@ -439,9 +438,10 @@
   <div class="section">
     <div class="section-label">
       <div class="section-num">8</div>
-      <h2>iCloud & Backups</h2>
+      <h2>iCloud Sync &amp; Backups</h2>
     </div>
-    <p>If you have iCloud Backup enabled on your iPhone, your device data — including data stored by Upkeeping — may be backed up to your personal iCloud account. This backup is controlled entirely by you and Apple, not by Apps by Murphy. We have no access to your iCloud data.</p>
+    <p>Upkeeping uses Apple's CloudKit to sync your task data privately across your own devices when you are signed into iCloud. This sync happens between your devices and your personal iCloud account — Apps by Murphy does not have access to this data.</p>
+    <p>Additionally, if you have iCloud Backup enabled, your device data — including data stored by Upkeeping — may be backed up to your iCloud account. Both CloudKit sync and iCloud Backup are controlled entirely by you through iOS Settings. You can disable iCloud sync for Upkeeping at any time in <strong style="color:var(--text);">Settings → [Your Name] → iCloud → Upkeeping</strong>.</p>
   </div>
 
   <div class="divider"></div>
@@ -463,7 +463,7 @@
       <div class="section-num">10</div>
       <h2>Your Rights</h2>
     </div>
-    <p>Because Upkeeping collects no personal data, there is nothing for us to access, export, correct, or delete on your behalf. All of your data is on your device, under your full control. You can delete all app data at any time by uninstalling Upkeeping from your iPhone.</p>
+    <p>Because Upkeeping collects no personal data, there is nothing for us to access, export, correct, or delete on your behalf. All of your data is on your device and in your private iCloud account, under your full control. You can delete all local app data at any time by uninstalling Upkeeping from your iPhone, and you can remove iCloud data via icloud.com or iOS Settings.</p>
     <p>If you have any questions about your privacy or believe something in this policy is inaccurate, please contact us.</p>
   </div>
 
